@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+   .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Churchesaroundme
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.nav-item
+              a.nav-link(href='/about/') About
+
+    .container
+      block content
+
+      footer
+        .row
+          .col-xs-12
+            small &copy; Churcesaroundme 2017
+
+    script(src='/javascripts/jquery-3.2.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/javascripts/site.js')
+    script(src!="//maps.googleapis.com/maps/api/js?key=AIzaSyD82ALOHC2WxtSHU4eS2x0hmx09H3qk3TM")

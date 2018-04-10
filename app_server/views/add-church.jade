@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Add a church
+  .row
+    .col-xs-12.col-md-6
+      form#myform.form-horizontal(action="/", method="get", role="form")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="name")  Name
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="name" placeholder="church name")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="denomination")  Denomination
+          .col-xs-12.col-sm-10
+            select#denomination.form-control.input-sm(name="denomination")
+              option Adventist
+              option Anglican
+              option Baptist
+              option Catholic
+              option Evangelical
+              option Lutheran
+              option Methodist
+              option Non-denominational
+              option Pentecostal
+              option Protestant
+              option Others
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="day")  Day
+          .col-xs-12.col-sm-10
+            select#day.form-control.input-sm(name="day")
+              option Sunday
+              option Monday
+              option Tuesday
+              option Wednesday
+              option Thursday
+              option Friday
+              option Saturday
+         .form-group
+          label.col-xs-10.col-sm-2.control-label(for="time")  Time
+          .col-xs-12.col-sm-10
+            select#time.form-control.input-sm(name="time")
+                  option 8:00 AM
+                  option 8:30 AM
+                  option 9:00 AM
+                  option 9:30 AM
+                  option 10:00 AM
+                  option 10:30 AM
+                  option 11:00 AM
+                  option 11:30 AM
+                  option 5:00 PM
+                  option 5:30 PM
+                  option 6:00 PM
+                  option 6:30 PM
+                  option 7:00 PM
+
+            button.btn(type="button" onclick="addServiceTime()") Add Service Time
+            ul#servicetime
+
+        .form-group
+           label.col-xs-10.col-sm-2.control-label(for="ministries")  Ministries / Programs
+           .col-xs-12.col-sm-10
+              input#ministries.form-control(name="ministries" placeholder="ministries / programs")
+
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="address")  Address
+          .col-xs-12.col-sm-10
+              textarea#address.form-control(name="address",placeholder="address")
+
+        .form-group
+           label.col-xs-10.col-sm-2.control-label(for="coords")
+           .col-xs-12.col-sm-10
+              ul#coords(hidden)
+
+
+
+        button#submitform.btn.btn-default.pull-right(type="button",onclick="getLocation()") Add my church
+    .col-xs-12.col-md-4

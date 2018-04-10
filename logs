@@ -1,0 +1,101 @@
+2017-06-26T05:40:24.943129+00:00 app[web.1]: > node ./bin/www
+2017-06-26T05:40:24.943130+00:00 app[web.1]: 
+2017-06-26T05:40:25.778010+00:00 app[web.1]: 
+2017-06-26T05:40:25.778013+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-06-26T05:40:25.773329+00:00 app[web.1]: Mongoose disconnected
+2017-06-26T05:40:25.759649+00:00 app[web.1]: (node:17) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`
+2017-06-26T05:40:25.778012+00:00 app[web.1]: events.js:160
+2017-06-26T05:40:25.779364+00:00 app[web.1]:     at Pool.emit (events.js:188:7)
+2017-06-26T05:40:25.779361+00:00 app[web.1]: MongoError: failed to connect to server [process.MONGOLAB_URI:27017] on first connect [MongoError: getaddrinfo ENOTFOUND process.MONGOLAB_URI process.MONGOLAB_URI:27017]
+2017-06-26T05:40:25.778014+00:00 app[web.1]:       ^
+2017-06-26T05:40:25.779363+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:328:35)
+2017-06-26T05:40:25.779363+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-06-26T05:40:25.779365+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-06-26T05:40:25.779366+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-06-26T05:40:25.779367+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:177:49)
+2017-06-26T05:40:25.779365+00:00 app[web.1]:     at Connection.g (events.js:292:16)
+2017-06-26T05:40:25.779366+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-06-26T05:40:25.779368+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-06-26T05:40:25.779370+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+2017-06-26T05:40:25.779368+00:00 app[web.1]:     at Socket.g (events.js:292:16)
+2017-06-26T05:40:25.779369+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-06-26T05:40:25.779370+00:00 app[web.1]:     at connectErrorNT (net.js:1021:8)
+2017-06-26T05:40:25.779371+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:104:9)
+2017-06-26T05:40:25.806532+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-06-26T05:40:25.793170+00:00 app[web.1]: 
+2017-06-26T05:40:25.806127+00:00 app[web.1]: npm ERR! Linux 3.13.0-112-generic
+2017-06-26T05:40:25.806834+00:00 app[web.1]: npm ERR! node v6.11.0
+2017-06-26T05:40:25.808183+00:00 app[web.1]: npm ERR! 
+2017-06-26T05:40:25.807090+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-06-26T05:40:25.807810+00:00 app[web.1]: npm ERR! churchesaroundme@0.0.0 start: `node ./bin/www`
+2017-06-26T05:40:25.807566+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-06-26T05:40:25.807962+00:00 app[web.1]: npm ERR! Exit status 1
+2017-06-26T05:40:25.808385+00:00 app[web.1]: npm ERR! Failed at the churchesaroundme@0.0.0 start script 'node ./bin/www'.
+2017-06-26T05:40:25.808934+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-06-26T05:40:25.808555+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-06-26T05:40:25.809151+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-06-26T05:40:25.808758+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the churchesaroundme package,
+2017-06-26T05:40:25.811070+00:00 app[web.1]: npm ERR!     npm owner ls churchesaroundme
+2017-06-26T05:40:25.809356+00:00 app[web.1]: npm ERR!     node ./bin/www
+2017-06-26T05:40:25.810529+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-06-26T05:40:25.810740+00:00 app[web.1]: npm ERR!     npm bugs churchesaroundme
+2017-06-26T05:40:25.810885+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-06-26T05:40:25.816504+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-06-26T05:40:25.811230+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-06-26T05:40:25.816103+00:00 app[web.1]: 
+2017-06-26T05:40:25.816377+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-06-26T05:40:25.940031+00:00 heroku[web.1]: State changed from starting to crashed
+2017-06-26T05:40:25.941049+00:00 heroku[web.1]: State changed from crashed to starting
+2017-06-26T05:40:25.925455+00:00 heroku[web.1]: Process exited with status 1
+2017-06-26T05:40:27.387338+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-06-26T05:40:29.443881+00:00 app[web.1]: 
+2017-06-26T05:40:29.443901+00:00 app[web.1]: > churchesaroundme@0.0.0 start /app
+2017-06-26T05:40:29.443902+00:00 app[web.1]: > node ./bin/www
+2017-06-26T05:40:29.443903+00:00 app[web.1]: 
+2017-06-26T05:40:30.053047+00:00 app[web.1]: (node:17) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`
+2017-06-26T05:40:30.061217+00:00 app[web.1]: Mongoose disconnected
+2017-06-26T05:40:30.064121+00:00 app[web.1]: 
+2017-06-26T05:40:30.064123+00:00 app[web.1]: events.js:160
+2017-06-26T05:40:30.064123+00:00 app[web.1]:       throw er; // Unhandled 'error' event
+2017-06-26T05:40:30.064124+00:00 app[web.1]:       ^
+2017-06-26T05:40:30.065149+00:00 app[web.1]: MongoError: failed to connect to server [process.MONGOLAB_URI:27017] on first connect [MongoError: getaddrinfo ENOTFOUND process.MONGOLAB_URI process.MONGOLAB_URI:27017]
+2017-06-26T05:40:30.065151+00:00 app[web.1]:     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:328:35)
+2017-06-26T05:40:30.065152+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-06-26T05:40:30.065153+00:00 app[web.1]:     at Pool.emit (events.js:188:7)
+2017-06-26T05:40:30.065154+00:00 app[web.1]:     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+2017-06-26T05:40:30.065155+00:00 app[web.1]:     at Connection.g (events.js:292:16)
+2017-06-26T05:40:30.065155+00:00 app[web.1]:     at emitTwo (events.js:106:13)
+2017-06-26T05:40:30.065156+00:00 app[web.1]:     at Connection.emit (events.js:191:7)
+2017-06-26T05:40:30.065156+00:00 app[web.1]:     at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:177:49)
+2017-06-26T05:40:30.065157+00:00 app[web.1]:     at Socket.g (events.js:292:16)
+2017-06-26T05:40:30.065158+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-06-26T05:40:30.065158+00:00 app[web.1]:     at Socket.emit (events.js:188:7)
+2017-06-26T05:40:30.065159+00:00 app[web.1]:     at connectErrorNT (net.js:1021:8)
+2017-06-26T05:40:30.065160+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+2017-06-26T05:40:30.065161+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:104:9)
+2017-06-26T05:40:30.075002+00:00 app[web.1]: 
+2017-06-26T05:40:30.083026+00:00 app[web.1]: npm ERR! Linux 3.13.0-112-generic
+2017-06-26T05:40:30.083313+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-06-26T05:40:30.083532+00:00 app[web.1]: npm ERR! node v6.11.0
+2017-06-26T05:40:30.083734+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-06-26T05:40:30.084027+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-06-26T05:40:30.084190+00:00 app[web.1]: npm ERR! churchesaroundme@0.0.0 start: `node ./bin/www`
+2017-06-26T05:40:30.084330+00:00 app[web.1]: npm ERR! Exit status 1
+2017-06-26T05:40:30.084478+00:00 app[web.1]: npm ERR! 
+2017-06-26T05:40:30.084622+00:00 app[web.1]: npm ERR! Failed at the churchesaroundme@0.0.0 start script 'node ./bin/www'.
+2017-06-26T05:40:30.084786+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-06-26T05:40:30.084931+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the churchesaroundme package,
+2017-06-26T05:40:30.085062+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-06-26T05:40:30.085202+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-06-26T05:40:30.085335+00:00 app[web.1]: npm ERR!     node ./bin/www
+2017-06-26T05:40:30.085474+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-06-26T05:40:30.085607+00:00 app[web.1]: npm ERR!     npm bugs churchesaroundme
+2017-06-26T05:40:30.085741+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-06-26T05:40:30.085872+00:00 app[web.1]: npm ERR!     npm owner ls churchesaroundme
+2017-06-26T05:40:30.085999+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-06-26T05:40:30.090394+00:00 app[web.1]: 
+2017-06-26T05:40:30.090668+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-06-26T05:40:30.090811+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-06-26T05:40:30.174740+00:00 heroku[web.1]: Process exited with status 1
+2017-06-26T05:40:30.186871+00:00 heroku[web.1]: State changed from starting to crashed
+2017-06-26T05:53:04.433181+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=quiet-thicket-50227.herokuapp.com request_id=20756d86-39bb-4b72-a6a7-394f1d62425a fwd="70.114.177.131" dyno= connect= service= status=503 bytes= protocol=https

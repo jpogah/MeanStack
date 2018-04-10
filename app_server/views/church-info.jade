@@ -1,0 +1,59 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1= church.name
+      span.label.label-warning
+        span.glyphicon.glyphicon-ok
+        | &nbsp;#{church.denomination}
+      | &nbsp;
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            +outputRating(church.rating)
+          p= church.address
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Service Times
+            .panel-body
+              each time in church.serviceTime
+                p= time
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Ministries and Programs
+            .panel-body
+              each ministry in church.ministries
+                span.label.label-warning
+                  span.glyphicon.glyphicon-ok
+                  | &nbsp;#{ministry}
+                | &nbsp;
+
+        .col-xs-12.col-sm-6.church-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title location map
+            .panel-body
+              iframe.img-responsive.img-rounded(width="600" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD82ALOHC2WxtSHU4eS2x0hmx09H3qk3TM&q=29.33517,-98.516809")
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/church/review/new') Add review
+              h2.panel-title Member review
+            .panel-body.review-container
+              each review in church.reviews
+                .row
+                  .review
+                    .well.well-sm.review-header
+                      span.rating
+                        +outputRating(review.rating)
+                      span.reviewAuthor #{review.author}
+                      small.reviewTimestamp #{review.timestamp}
+                  .col-xs-12
+                    p !{(review.reviewText).replace(/\n/g,'<br/>')}
+      .col-xs-12.col-md-3
